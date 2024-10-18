@@ -1,0 +1,93 @@
+
+  .self{
+    margin-left: 75px !important;
+  
+  }
+
+    nav{
+      font-family: Helvetica;
+      font-size: 18px;
+      font-weight: 400; 
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      border-bottom: 0.5px solid #95959557; 
+      background: #f5f5f5;
+      transition: background-color 0.5s; 
+    }
+    .collection{
+      border-bottom: 1.5px solid black; 
+      display: inline-block;
+       padding-bottom: 2.5px;
+    }
+.self-contained{
+  margin-left: 33px;    
+  margin-right:33px;
+}         
+
+.card {
+ 
+  margin: 7px !important;  
+  box-shadow: 4px 2px 15px 0px #8b878740;
+  padding: 20px;
+  background: #ffffff;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  gap: 0px;
+  border-radius: 12px  !important;
+  opacity: 0px;
+  transition: background-color 0.5s;
+}
+
+
+
+/* Light mode styles (default) */
+body {
+  padding-bottom: 15px;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+
+}
+
+.navbar {
+  background-color: lightgray; /* Light mode color */
+ 
+}
+
+.card {
+  background-color: white; /* Card background in light mode */
+  color: black; /* Card text color in light mode */
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark body background */
+  color: white; /* Dark mode text color */
+}
+
+body.dark-mode .navbar {
+  background-color: #343a40 !important; /* Bootstrap dark navbar color */
+  color: white; /* Navbar text color in dark mode */
+}
+
+body.dark-mode .navbar .nav-link {
+  color: white; /* Navbar link color in dark mode */
+}
+
+body.dark-mode .navbar .navbar-brand {
+  color: white; /* Navbar brand color in dark mode */
+}
+
+body.dark-mode .card {
+  background-color: #444; /* Card background in dark mode */
+  box-shadow: 4px 2px 15px 0px #dc1111;
+  color: white; /* Card text color in dark mode */
+}
+body.dark-mode .navbar  .collection{
+  border-bottom: 1.5px solid white; 
+}
