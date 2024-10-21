@@ -1,49 +1,55 @@
 
-  .self{
-    margin-left: 75px !important;
-  
-  }
 
     nav{
       font-family: Helvetica;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400; 
       line-height: 16px;
       letter-spacing: 0.1em;
       text-align: left;
       border-bottom: 0.5px solid #95959557; 
       background: #f5f5f5;
-      transition: background-color 0.5s; 
+      transition: background-color 0.5s;    
+      
     }
     .collection{
       border-bottom: 1.5px solid black; 
       display: inline-block;
-       padding-bottom: 2.5px;
+       padding-bottom: 2.5px; 
     }
-.self-contained{
-  margin-left: 33px;    
-  margin-right:33px;
-}         
+    .textTittle
+    {
+      font-size: 12px!important;
+      
+    }
 
-.card {
- 
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%; /* Reduce the width further */
+}
+.nav-link {
+    padding: 0 15px; /* Decrease padding for less space between links */
+}
+
+.card { 
+
   margin: 7px !important;  
   box-shadow: 4px 2px 15px 0px #8b878740;
   padding: 20px;
   background: #ffffff;
-  font-family: Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0.1em;
   gap: 0px;
   border-radius: 12px  !important;
   opacity: 0px;
   transition: background-color 0.5s;
 }
-
-
-
+.custom-font-size {
+  font-family: Helvetica;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
 /* Light mode styles (default) */
 body {
   padding-bottom: 15px;
@@ -66,12 +72,14 @@ body {
 
 /* Dark mode styles */
 body.dark-mode {
-  background-color: #121212; /* Dark body background */
+  /* background-color: hsl(200, 7.0%, 8.8%); */
+  background-color: rgb(30, 35, 30);
   color: white; /* Dark mode text color */
 }
 
 body.dark-mode .navbar {
-  background-color: #343a40 !important; /* Bootstrap dark navbar color */
+   background-color: hsl(200, 7.0%, 8.8%)!important;     
+   /* background-color: #343a40 !important; */
   color: white; /* Navbar text color in dark mode */
 }
 
@@ -84,10 +92,50 @@ body.dark-mode .navbar .navbar-brand {
 }
 
 body.dark-mode .card {
-  background-color: #444; /* Card background in dark mode */
-  box-shadow: 4px 2px 15px 0px #dc1111;
+  background-color: #20232D;
+   box-shadow:gray;
   color: white; /* Card text color in dark mode */
 }
 body.dark-mode .navbar  .collection{
   border-bottom: 1.5px solid white; 
 }
+/* Override Bootstrap's default blue color when the switch is checked */
+.form-check-input:checked {
+  background-color: #444 !important; /* Dark background when checked */
+  border-color:#444   !important;     /* Dark border when checked */
+}
+
+/* Optionally style the thumb (circle inside the switch) */
+.form-check-input:checked:focus {
+  box-shadow: none !important; /* Remove focus shadow */
+} 
+/* Base styles for the switch */
+.form-check-input {
+  width: 47px;
+  height: 21px;
+  display: block;
+  margin: 0;
+  background-color: #C4C4C4; /* Background color of the switch */
+  border-radius: 50px; /* Make the switch rounded */
+  position: relative; /* For positioning the bubble */
+  cursor: pointer; /* Pointer on hover */
+}
+
+/* Bubble styles */
+.form-check-input:before {
+  content: '';
+  position: absolute;
+  top: 2px; /* Adjust vertical position */
+  left: 2px; /* Adjust horizontal position */
+  width: 15px; /* Width of the bubble */
+  height: 15px; /* Height of the bubble */
+  background-color: white; /* Color of the bubble */
+  border-radius: 50%; /* Make the bubble round */
+  transition: transform 0.2s; /* Smooth transition */
+}
+/* Move the bubble to the right when checked */
+.form-check-input:checked:before {
+  transform: translateX(26px); /* Adjust to slide the bubble */
+}
+
+

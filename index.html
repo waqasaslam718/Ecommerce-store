@@ -4,40 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NFTees</title>
- 
+    
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="styles.css">
 </head>
 
   <body>
     <nav class="navbar navbar-expand-xxl bg-body-tertiary ">
-        <div class="container-fluid">
+        <div class="container-fluid "> 
             <!-- Left part of the navbar -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img id="logo" src="/images/logo-white.png" alt="Logo" width="63" height="63" class="d-inline-block align-text-top ms-5">
+            <a class="navbar-brand d-flex align-items-center " href="#">
+                <img id="logo" src="/images/logo-white.png" alt="Logo" width="63" height="63" class="d-inline-block align-text-top ms-5 ">
                 <img id="logo2" src="/images/logo2-white.png" alt="Logo" width="98" height="37" class="d-inline-block align-text-top ms-3   ">
             </a>
-
             <!-- Navbar Toggler (hamburger icon for small screens) -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria- controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- Navbar links (collapsible for small screens) -->
-            <div class="collapse navbar-collapse self" id="navbarNavAltMarkup" >
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup"  >
                 <div class="navbar-nav mx-auto " > <!-- Centering the nav links -->
-                    <a class="nav-link active  self-contained " href="#">
+                    <a class="nav-link active   " href="#">
                         <span class="collection">Collection</span>
                     </a>
-                    <a class="nav-link active self-contained " href="#">Community</a>          
-                    <a class="nav-link active self-contained" href="#">How It Works</a>
-                    <a class="nav-link active self-contained" href="#">About Us</a>       
-                    <a class="nav-link active self-contained" href="#">Roadmap</a>
+                    <a class="nav-link active  " href="#">Community</a>          
+                    <a class="nav-link active " href="#">How It Works</a>
+                    <a class="nav-link active " href="#">About Us</a>       
+                    <a class="nav-link active " href="#">Roadmap</a>
                 </div>
                 <div class="d-flex align-items-center    ">
                     <button type="button" class="btn" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; background: #C4C4C4; border-radius: 20px; width: 135px; height: 30px;"> <!-- Added margin-right -->
                         <b>Connect Wallet</b>       
-                    </button>
+                    </button>   
                 
                     <a class="navbar-brand ms-3 " href="#" "> <!-- Added margin-right -->
                         <img id="shopping-bag" src="/images/shoping-light.png" alt="Shopping bag" width="35" height="35" class="d-inline-block align-text-top">
@@ -45,7 +43,9 @@
                 
                     <div class="me-3" style="margin: 0; padding: 0; margin-top: auto;">
                         <div class="form-check form-switch" style="text-align: center; margin: 0; padding: 0;">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="width: 47px; height: 21px; display: block; margin: 0;">
+                           <!-- <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"> -->
+
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="width: 47px; height: 21px; display: block; margin: 0; background-color: #C4C4C4;color: white;">
                             <div id="mode-label" style="font-size: 8px; letter-spacing: 0; margin: 0; text-align: center;">Light Mode</div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
            
         </div>
     </nav>
-
+                
     <div class="container-fluid custom-container" style="padding: 50px 10%; ">  
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">  
         <!-- Product Item 1 -->
@@ -71,19 +71,19 @@
             <div class="card custum-card border-0  " >
                 <img src="/images/1.png" class="card-img-top img-fluid  rounded  rounded" alt="Product Image 1">
                 <div class="card-body text-center"> 
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>  
+                    <h6 class="card-title custom-font-size ">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle textTittle">$164.00 CAD</h6>  
                 </div>
             </div>
-        </div>
+        </div>      
 
         <!-- Product Item 2 -->
         <div class="col">
             <div class="card  border-0 ">
                 <img src="/images/2.png" class="card-img-top img-fluid  rounded" alt="Product Image 2">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -92,8 +92,8 @@
             <div class="card  border-0 ">
                 <img src="/images/3.png" class="card-img-top img-fluid  rounded" alt="Product Image 3" >
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -102,8 +102,8 @@
             <div class="card  border-0 ">
                 <img src="/images/4.png" class="card-img-top img-fluid  rounded" alt="Product Image 4">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -112,8 +112,8 @@
             <div class="card  border-0 ">
                 <img src="/images/5.png" class="card-img-top img-fluid  rounded" alt="Product Image 5">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -122,8 +122,8 @@
             <div class="card  border-0 ">
                 <img src="/images/6.png" class="card-img-top img-fluid  rounded" alt="Product Image 6">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -132,8 +132,8 @@
             <div class="card  border-0 ">
                 <img src="/images/7.png" class="card-img-top img-fluid  rounded" alt="Product Image 7">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -142,8 +142,8 @@
             <div class="card  border-0 ">
                 <img src="/images/8.png" class="card-img-top img-fluid  rounded" alt="Product Image 8">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -152,8 +152,8 @@
             <div class="card  border-0 ">
                 <img src="/images/9.png" class="card-img-top img-fluid  rounded" alt="Product Image 9">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -162,8 +162,8 @@
             <div class="card  border-0 ">
                 <img src="/images/10.png" class="card-img-top img-fluid  rounded" alt="Product Image 10">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -172,8 +172,8 @@
             <div class="card  border-0 ">
                 <img src="/images/11.png" class="card-img-top img-fluid  rounded" alt="Product Image 11">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
@@ -182,8 +182,8 @@
             <div class="card  border-0 ">
                 <img src="/images/12.png" class="card-img-top img-fluid  rounded" alt="Product Image 12">
                 <div class="card-body text-center">
-                    <h6 class="card-title">Product Name</h6>
-                    <h6 class="card-text">$164.00 CAD</h6>
+                    <h6 class="card-title custom-font-size">Product Name</h6>
+                    <h6 class="card-text custom-font-size textTittle">$164.00 CAD</h6>
                 </div>
             </div>
         </div>
